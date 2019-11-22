@@ -1,0 +1,16 @@
+﻿  TComWeightPrediction.cpp
+  TComTrQuant.cpp
+  TComTU.cpp
+  TComSlice.cpp
+  TComSampleAdaptiveOffset.cpp
+  TComRom.cpp
+  TComPrediction.cpp
+  TComPicSym.cpp
+  TComPic.cpp
+  TComPattern.cpp
+  TComLoopFilter.cpp
+  TComDataCU.cpp
+  TComChromaFormat.cpp
+  Debug.cpp
+  Generating Code...
+  TLibCommon_vc2015.vcxproj -> E:\trunk\build\\vc2015\Win32\Debug\TLibCommon\TLibCommon.lib

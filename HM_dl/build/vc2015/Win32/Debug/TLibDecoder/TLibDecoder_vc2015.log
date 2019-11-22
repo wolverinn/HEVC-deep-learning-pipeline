@@ -1,0 +1,10 @@
+﻿  TDecTop.cpp
+  TDecSlice.cpp
+  TDecSbac.cpp
+  TDecGop.cpp
+  TDecEntropy.cpp
+  TDecCu.cpp
+  TDecConformance.cpp
+  TDecCAVLC.cpp
+  Generating Code...
+  TLibDecoder_vc2015.vcxproj -> E:\trunk\build\\vc2015\Win32\Debug\TLibDecoder\TLibDecoder.lib

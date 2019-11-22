@@ -1,0 +1,3 @@
+﻿LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/PROFILE' specification
+  TAppMCTSExtractor_vc2015.vcxproj -> E:\trunk\build\\..\bin\vc2015\Win32\Debug\TAppMctsExtractor.exe
+  TAppMCTSExtractor_vc2015.vcxproj -> E:\trunk\build\\..\bin\vc2015\Win32\Debug\TAppMctsExtractor.pdb (Full PDB)
