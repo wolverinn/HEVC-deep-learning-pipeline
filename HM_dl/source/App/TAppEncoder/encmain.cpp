@@ -102,6 +102,7 @@ int main(int argc, char* argv[])
   Double dResult;
   clock_t lBefore = clock();
   
+  system("python gen_frames.py");
   thread thread(py_pred);
   thread.detach();
   // call encoding function

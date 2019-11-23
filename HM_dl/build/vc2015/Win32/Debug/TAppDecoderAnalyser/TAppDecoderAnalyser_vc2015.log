@@ -1,5 +1,2 @@
-﻿  decmain.cpp
-  TAppDecTop.cpp
-  Generating Code...
-  TAppDecoderAnalyser_vc2015.vcxproj -> E:\trunk\build\\..\bin\vc2015\Win32\Debug\TAppDecoderAnalyser.exe
-  TAppDecoderAnalyser_vc2015.vcxproj -> E:\trunk\build\\..\bin\vc2015\Win32\Debug\TAppDecoderAnalyser.pdb (Full PDB)
+﻿  TAppDecoderAnalyser_vc2015.vcxproj -> E:\downloads\HEVC-deep-learning-pipeline\HM_dl\build\\..\bin\vc2015\Win32\Debug\TAppDecoderAnalyser.exe
+  TAppDecoderAnalyser_vc2015.vcxproj -> E:\downloads\HEVC-deep-learning-pipeline\HM_dl\build\\..\bin\vc2015\Win32\Debug\TAppDecoderAnalyser.pdb (Full PDB)

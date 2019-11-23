@@ -42,6 +42,7 @@
 #include "TLibCommon/Debug.h"
 
 #include <io.h>
+#include<Windows.h>
 #include <cmath>
 #include <algorithm>
 #define DEBUG_CTU_DEPTH 0
@@ -241,11 +242,12 @@ Void TEncCu::compressCtu( Int m_iFrame, TComDataCU* pCtu )
 
   // modified2019
   string filename = "./pred/"+to_string(m_iFrame)+"/ctu"+ to_string(pCtu->getCtuRsAddr())+".txt";
-  while (_access(filename.c_str(), 0) == -1) { continue; }
+  while (_access(filename.c_str(), 0) != 0) { Sleep(5); }
   ifstream depth_file(filename);
   UInt label[16];
   for (int i = 0; i < 16; i++) {
 	  depth_file >> label[i];
+	  //cout << label[i] << endl;
   }
   depth_file.close();
   m_ppcBestCU[0]->set_pred(label);

@@ -2,6 +2,8 @@
 
 When HEVC encoder finishes encoding a YUV sequence, it outputs some information on the command line, like this:
 
+![HEVC output](_v_images/20191123100250000_16638.png)
+
 According to "Calculation of average PSNR differences between RD-Curves, VCEG-M33" and "Improvements of the BD-PSNR model, VCEG-AI11", Bjontegaard metric is often used to compare two methods. To be specific, **Bjøntegaard delta bit rate (BDBR)** and **Bjøntegaard delta peak signal-to-noise rate (BD-PSNR)**. We have the output of HEVC encoder, and here are some ready-to-use tools to calculate BDBR and BD-PSNR from the output (which gives us the bitrate and Y-PSNR).
 
 **NOTE: These tools are all from the Internet.**
