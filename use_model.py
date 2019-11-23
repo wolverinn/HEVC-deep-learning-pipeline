@@ -65,38 +65,19 @@ print("loaded model from drive")
 with open("bitstream.cfg",'r') as f:
     for i,line in enumerate(f):
         line = line.split(":")
-        if i == 0:
-            yuv_file = ":".join(line[1:]).strip(" ").strip('\n')
-        elif i == 3:
-            frame_rate = line[1].strip(" ").strip('\n')
-        elif i == 5:
-            yuv_width = line[1].strip(" ").strip('\n')
-        elif i == 6:
-            yuv_height = line[1].strip(" ").strip('\n')
-        elif i == 7:
+        if i == 7:
             frame_tobe_encoded = line[1].strip(" ").strip('\n')
         else:
             pass
-try:
-    os.mkdir("./rec/frames")
-except:
-    pass
-gen_frames_cmd = "ffmpeg -video_size {}x{} -r {} -pixel_format yuv420p -i {} .\\rec\\frames\\%d.jpg".format(yuv_width,yuv_height,frame_rate,yuv_file)
-# os.system(gen_frames_cmd)
 
 total_frames = len(list(os.listdir("./rec/frames")))
-try:
-    shutil.rmtree("./pred")
-except:
-    pass
-os.mkdir("./pred")
 for frame_number in range(1,total_frames+1):
     if frame_number > int(frame_tobe_encoded):
         break
+    os.mkdir("./pred/{}".format(frame_number-1))
     img = Image.open("./rec/frames/{}.jpg".format(frame_number))
     img_width, img_height = img.size
     ctu_numbers = math.ceil(img_width / 64) * math.ceil(img_height / 64)
-    os.mkdir("./pred/{}".format(frame_number-1))
     label = []
     for i in range(16):
         label.append(str(i))
@@ -143,4 +124,4 @@ for frame_number in range(1,total_frames+1):
                     f.write(" ")
             os.rename("./pred/{}/ctu.txt".format(frame_number-1),"./pred/{}/ctu{}.txt".format(frame_number-1,i))
     img.close()
-    # os.remove("./rec/frames/{}.jpg".format(frame_number))
+    os.remove("./rec/frames/{}.jpg".format(frame_number))
