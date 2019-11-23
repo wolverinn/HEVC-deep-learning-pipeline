@@ -240,9 +240,9 @@ Void TEncCu::compressCtu( Int m_iFrame, TComDataCU* pCtu )
   // analysis of CU
   DEBUG_STRING_NEW(sDebug)
 
-  // modified2019
+  //modified2019
   string filename = "./pred/"+to_string(m_iFrame)+"/ctu"+ to_string(pCtu->getCtuRsAddr())+".txt";
-  while (_access(filename.c_str(), 0) != 0) { Sleep(5); }
+  while (_access(filename.c_str(), 0) != 0) { Sleep(1); }
   ifstream depth_file(filename);
   UInt label[16];
   for (int i = 0; i < 16; i++) {
@@ -812,6 +812,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
             )))
         {
 #endif 
+			//modified2019
 			if (check_current) {
 				xCheckRDCostIntra(rpcBestCU, rpcTempCU, SIZE_2Nx2N DEBUG_STRING_PASS_INTO(sDebug));
 				rpcTempCU->initEstData(uiDepth, iQP, bIsLosslessMode);

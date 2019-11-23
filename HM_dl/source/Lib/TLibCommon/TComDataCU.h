@@ -144,7 +144,7 @@ private:
   // -------------------------------------------------------------------------------------------------------------------
   // misc. variables
   // -------------------------------------------------------------------------------------------------------------------
-  UInt*    pred_depth;
+  UInt*    pred_depth;    //modified2019
   Bool          m_bDecSubCu;                            ///< indicates decoder-mode
   Double        m_dTotalCost;                           ///< sum of partition RD costs
   Distortion    m_uiTotalDistortion;                    ///< sum of partition distortion
@@ -196,6 +196,7 @@ public:
   // -------------------------------------------------------------------------------------------------------------------
   // member functions for CU description
   // -------------------------------------------------------------------------------------------------------------------
+  //modified2019
   void    set_pred(UInt *label) { pred_depth = label; }
   UInt*    get_pred() { return pred_depth; }
   TComPic*         getPic                     ( )                                                          { return m_pcPic;                            }

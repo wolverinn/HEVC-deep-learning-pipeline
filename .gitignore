@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+!TAppEncoder_original.exe
+.tlog
+/HM_dl/build/vc2015/Win32/*

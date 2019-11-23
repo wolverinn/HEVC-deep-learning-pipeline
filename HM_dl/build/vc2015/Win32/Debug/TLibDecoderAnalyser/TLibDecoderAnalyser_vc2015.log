@@ -1,1 +1,11 @@
-﻿  TLibDecoderAnalyser_vc2015.vcxproj -> E:\downloads\HEVC-deep-learning-pipeline\HM_dl\build\\vc2015\Win32\Debug\TLibDecoderAnalyser\TLibDecoderAnalyser.lib
+﻿  TDecTop.cpp
+  TDecSlice.cpp
+  TDecSbac.cpp
+  TDecGop.cpp
+  TDecEntropy.cpp
+  TDecCu.cpp
+  TDecConformance.cpp
+  TDecCAVLC.cpp
+  SEIread.cpp
+  Generating Code...
+  TLibDecoderAnalyser_vc2015.vcxproj -> E:\downloads\HEVC-deep-learning-pipeline\HM_dl\build\\vc2015\Win32\Debug\TLibDecoderAnalyser\TLibDecoderAnalyser.lib

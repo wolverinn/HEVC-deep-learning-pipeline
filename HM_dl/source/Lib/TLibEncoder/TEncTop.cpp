@@ -361,6 +361,7 @@ Void TEncTop::encode( Bool flush, TComPicYuv* pcPicYuvOrg, TComPicYuv* pcPicYuvT
   }
 
   // compress GOP
+  //modified2019
   Int m_iFrame = pcPicYuvOrg->getFrame();
   m_cGOPEncoder.compressGOP(m_iFrame, m_iPOCLast, m_iNumPicRcvd, m_cListPic, rcListPicYuvRecOut, accessUnitsOut, false, false, snrCSC, getOutputLogControl());
 
@@ -466,6 +467,7 @@ Void TEncTop::encode(Bool flush, TComPicYuv* pcPicYuvOrg, TComPicYuv* pcPicYuvTr
     if ( m_iNumPicRcvd && ((flush&&fieldNum==1) || (m_iPOCLast/2)==0 || m_iNumPicRcvd==m_iGOPSize ) )
     {
       // compress GOP
+		//modified2019
 	  Int m_iFrame = pcPicYuvOrg->getFrame();
       m_cGOPEncoder.compressGOP(m_iFrame, m_iPOCLast, m_iNumPicRcvd, m_cListPic, rcListPicYuvRecOut, accessUnitsOut, true, isTff, snrCSC, getOutputLogControl());
       iNumEncoded += m_iNumPicRcvd;

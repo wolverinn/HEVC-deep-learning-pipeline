@@ -1,2 +1,17 @@
-﻿  TEncCu.cpp
+﻿  WeightPredAnalysis.cpp
+  TEncTop.cpp
+  TEncSlice.cpp
+  TEncSearch.cpp
+  TEncSbac.cpp
+  TEncSampleAdaptiveOffset.cpp
+  TEncRateCtrl.cpp
+  TEncPreanalyzer.cpp
+  TEncPic.cpp
+  TEncGOP.cpp
+  TEncEntropy.cpp
+  TEncCu.cpp
+  TEncCavlc.cpp
+  SEIwrite.cpp
+  SEIEncoder.cpp
+  Generating Code...
   TLibEncoder_vc2015.vcxproj -> E:\downloads\HEVC-deep-learning-pipeline\HM_dl\build\\vc2015\Win32\Debug\TLibEncoder\TLibEncoder.lib

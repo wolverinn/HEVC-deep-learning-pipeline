@@ -67,7 +67,7 @@ private:
   // ------------------------------------------------------------------------------------------------
   //  Parameter for general YUV buffer usage
   // ------------------------------------------------------------------------------------------------
-  Int   m_iFrameRcvd;
+  Int   m_iFrameRcvd;  //modified2019
   Int   m_picWidth;                                 ///< Width of picture in pixels
   Int   m_picHeight;                                ///< Height of picture in pixels
   ChromaFormat m_chromaFormatIDC;                   ///< Chroma Format
@@ -112,8 +112,10 @@ public:
   // ------------------------------------------------------------------------------------------------
   //  Get information of picture
   // ------------------------------------------------------------------------------------------------
+  //modified2019
   Void setFrame(Int frameNum) { m_iFrameRcvd = frameNum; }
   Int getFrame() { return m_iFrameRcvd; }
+  //modified end
   Int           getWidth          (const ComponentID id) const { return  m_picWidth >> getComponentScaleX(id);   }
   Int           getHeight         (const ComponentID id) const { return  m_picHeight >> getComponentScaleY(id);  }
   ChromaFormat  getChromaFormat   ()                     const { return m_chromaFormatIDC; }

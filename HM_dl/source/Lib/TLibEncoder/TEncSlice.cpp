@@ -876,7 +876,7 @@ Void TEncSlice::compressSlice( Int m_iFrame, TComPic* pcPic, const Bool bCompres
     }
 
     // run CTU trial encoder
-    m_pcCuEncoder->compressCtu( m_iFrame, pCtu );
+    m_pcCuEncoder->compressCtu( m_iFrame, pCtu ); //modified2019
 
 
     // All CTU decisions have now been made. Restore entropy coder to an initial stage, ready to make a true encode,

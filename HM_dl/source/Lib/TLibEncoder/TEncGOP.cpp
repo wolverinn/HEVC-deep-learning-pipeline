@@ -1680,6 +1680,7 @@ Void TEncGOP::compressGOP( Int m_iFrame, Int iPOCLast, Int iNumPicRcvd, TComList
 
       for(UInt nextCtuTsAddr = 0; nextCtuTsAddr < numberOfCtusInFrame; )
       {
+		  //modified2019
         m_pcSliceEncoder->precompressSlice( m_iFrame, pcPic );
         m_pcSliceEncoder->compressSlice   (m_iFrame, pcPic, false, false );
 

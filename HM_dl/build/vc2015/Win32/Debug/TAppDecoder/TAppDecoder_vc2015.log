@@ -1,2 +1,5 @@
-﻿  TAppDecoder_vc2015.vcxproj -> E:\downloads\HEVC-deep-learning-pipeline\HM_dl\build\\..\bin\vc2015\Win32\Debug\TAppDecoder.exe
+﻿  decmain.cpp
+  TAppDecTop.cpp
+  Generating Code...
+  TAppDecoder_vc2015.vcxproj -> E:\downloads\HEVC-deep-learning-pipeline\HM_dl\build\\..\bin\vc2015\Win32\Debug\TAppDecoder.exe
   TAppDecoder_vc2015.vcxproj -> E:\downloads\HEVC-deep-learning-pipeline\HM_dl\build\\..\bin\vc2015\Win32\Debug\TAppDecoder.pdb (Full PDB)
