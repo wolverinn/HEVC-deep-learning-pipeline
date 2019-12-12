@@ -61,7 +61,7 @@ if the current depth needs calculation/ if the next depth needs calculation.
 
 If current_calculation is False, then skip ```xCheckRDCostIntra```. Instead, directly assign:
 
-```
+```cpp
 rpcBestCU->getTotalCost() = MAX_DOUBLE / 16;
 rpcBestCU->getTotalDistortion() = MAX_UINT >> 3;
 rpcBestCU->getTotalBits() = MAX_UINT >> 3;
@@ -71,7 +71,7 @@ rpcBestCU->setPredictionMode(0, MODE_INTRA);
 
 If next_calculation is False, then stop calling ```xCompressCU``` recursively. But directly assign:
 
-```
+```cpp
 pcSubBestPartCU->getTotalCost() = MAX_DOUBLE / 16;
 pcSubBestPartCU->getTotalDistortion() = MAX_UINT >> 3;
 pcSubBestPartCU->getTotalBits() = MAX_UINT >> 3;
